@@ -1,0 +1,158 @@
+#projetos .header-menu a[href*="projetos"] {
+  background: var(--cor-p1);
+}
+
+.intro-projetos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.intro-projetos-2 {
+  display: flex;
+  align-items: center;
+}
+
+.intro-projetos-2 p {
+  max-width: 35ch;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.projetos-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+#items-wrapper {
+  width: 50vw;
+}
+
+#items {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.items {
+  flex: none; 
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  pointer-events: none;
+}
+
+.items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detalhes-projetos-bg {
+  background-color: var(--cor-12);
+}
+
+.detalhes-projetos {
+  padding: 80px 10px;
+}
+
+.detalhes-projetos h2 {
+  margin-bottom: 60px;
+}
+
+.detalhes-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  position: relative;
+}
+
+.detalhes-item:nth-child(1),
+.detalhes-item:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.detalhes-item:nth-child(1)::after,
+.detalhes-item:nth-child(2)::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--cor-6);
+  top: 60px;
+}
+
+.detalhes-cont-span {
+  text-align: right;
+}
+
+.detalhes-esp span {
+  background: var(--cor-4);
+  padding: 8px 36px;
+  border-radius: 25px;
+}
+
+@media (max-width: 1200px) {
+  main {
+    margin-left: 0px;
+  }
+  .intro-projetos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .intro-projetos h1 {
+    text-align: center;
+  }
+  .intro-projetos-2 {
+    margin: auto;
+  }
+  .projetos-cont {
+    grid-template-columns: 1fr;
+  } 
+  #items-wrapper {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro-projetos h1 {
+    font-size: 4rem;
+  }
+  .intro-projetos-2 img {
+    width: 150px;
+    height: 150px;
+  }
+  .intro-projetos-2 p {
+    font-size: 1.5rem;
+  }
+  .detalhes-item {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro-projetos-2 img {
+    display: none;
+  }
+  .intro-projetos-2 p {
+    text-align: center;
+  }
+  .detalhes-projetos{
+    padding: 40px 10px;
+  }
+  .detalhes-item {
+    font-size: 1rem;
+  }
+  .detalhes-esp {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 10px
+  }
+}

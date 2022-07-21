@@ -1,0 +1,55 @@
+main {
+  margin: 0px 10px;
+}
+
+.titulo-termos {
+  text-align: center;
+  padding: 40px 0px;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+main h2,
+main h3 {
+  margin-bottom: 10px;
+}
+
+.conteudo-termos {
+  margin-bottom: 60px;
+}
+
+.conteudo-termos p {
+  font: 400 1.5rem/1.33 "Fira Sans", sans-serif;
+}
+
+.conteudo-termos h2,
+.conteudo-termos h3 {
+  font: 700 1.5rem/1.33 "Fira Sans", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .titulo-termos {
+    font-size: 2rem;
+  }
+  .conteudo-termos p {
+    font-size: 1rem;
+  }
+  .conteudo-termos h2,
+  .conteudo-termos h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .titulo-termos {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-termos {
+    font-size: 1rem;
+  }
+}

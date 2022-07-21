@@ -1,0 +1,28 @@
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* Utilidades */
+@import "./utilidade/componentes.css";
+@import "./utilidades/animacao.css";
+
+/* Tipografia */
+@import "./tipografia/cores.css";
+@import "./tipografia/tipografia.css";
+
+/* Home */
+@import "./home/introducao.css";
+@import "./home/experiencia.css";
+@import "./home/sobre.css";
+
+/* Termos */
+@import "./termos/termos.css";
+
+/* Projetos */
+@import "./projetos/projetos.css";
+
+/* Sobre */
+@import "./sobre/sobre.css";
+
+/* Contato */
+@import "./contato/contato.css";

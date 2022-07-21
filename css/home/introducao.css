@@ -1,0 +1,98 @@
+.titulo-intro {
+  font-family: "Libre Bodoni";
+}
+
+.introducao-img-prin {
+  margin: auto;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.titulo-intro {
+  font-size: 4rem;
+  padding: 10px;
+}
+
+.linha-2 {
+  padding-left: 50px;
+}
+
+.linha-3 {
+  padding-left: 100px;
+}
+
+.introducao-imagens {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
+}
+
+@media (max-width: 1700px) {
+  .titulo-intro {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .introducao-img-prin {
+    width: 500px;
+    margin: auto;
+  }
+  .titulo-intro {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .introducao-img-prin {
+    width: 400px;
+  }
+  .titulo-intro {
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .titulo-intro {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao-texto {
+    grid-row: 1;
+    margin: auto;
+  }
+  .introducao-img-prin {
+    width: 300px;
+  }
+  .titulo-intro {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .introducao-imagens {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .linha-2, .linha-3 {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-intro {
+    font-size: 1.5rem;
+  }
+}

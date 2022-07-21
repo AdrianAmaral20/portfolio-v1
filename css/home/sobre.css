@@ -1,0 +1,204 @@
+.sobre {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.sobre-lista {
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-mim,
+.habilidades,
+.aprendizado {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.sobre-mim h2,
+.habilidades h2,
+.aprendizado h2 {
+  padding-left: 10px;
+}
+
+.sobre-mim {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+.habilidades {
+  background-color: var(--cor-11);
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+.habilidades-titulo {
+  margin-top: 80px;
+}
+
+.habilidades-icons {
+  box-sizing: border-box;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.habilidades-icons span {
+  box-sizing: border-box;
+  color: var(--cor-p5);
+  background: var(--cor-p1);
+  padding: 8px 0px;
+  border-radius: 25px;
+  margin-top: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.habilidades-icons span:nth-child(1),
+.habilidades-icons span:nth-child(4) {
+  margin-left: 0px;
+}
+
+.aprendizado {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  box-sizing: border-box;
+}
+
+.aprendizado-conteudo p {
+  grid-column: 2;
+}
+
+.bloco-cont {
+  grid-column: 2;
+  display: flex;
+}
+
+.bloco-1 {
+  background: var(--cor-6);
+  width: 345px;
+  height: 250px;
+  border-radius: 5px;
+  margin-right: 4rem;
+  text-align: center;
+}
+
+.bloco-1-ling span {
+  display: inline-block;
+  background-color: var(--cor-2);
+  padding: 8px 16px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.bloco-1-ling {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.bloco-1-ling::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: var(--cor-2);
+}
+
+.bloco-1-cursos span {
+  margin: auto 30px;
+}
+
+.bloco-2 {
+  background: var(--cor-6);
+  width: max-content;
+  height: 250px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bloco-2-ling span {
+  display: inline-block;
+  background-color: var(--cor-2);
+  padding: 8px 16px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.bloco-2-ling {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.bloco-2-ling::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: var(--cor-2);
+}
+
+.bloco-2-cursos span {
+  margin: auto 8px;
+}
+
+@media (max-width: 1100px) {
+  .sobre-mim,
+  .habilidades,
+  .aprendizado {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-mim h2,
+  .habilidades h2,
+  .aprendizado h2,
+  .aprendizado-conteudo p {
+    text-align: center;
+  }
+  .sobre-mim p {
+    padding-top: 20px;
+  }
+  .aprendizado-conteudo p {
+    margin-top: 40px;
+  }
+  .bloco-1,
+  .bloco-2 {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .bloco-cont {
+    display: grid;
+  }
+  .bloco-1,
+  .bloco-2 {
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+    padding-bottom: 20px;
+    height: auto;
+  }
+
+  .aprendizado {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .habilidades-icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 8px 24px;
+    text-align: center;
+  }
+  .habilidades-icons span {
+    margin: 20px;
+  }
+  .habilidades-icons span:nth-child(1),
+  .habilidades-icons span:nth-child(4) {
+    margin-left: 20px;
+  }
+}

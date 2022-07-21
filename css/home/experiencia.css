@@ -1,0 +1,65 @@
+.experiencia-bg {
+  background: var(--cor-3);
+  
+}
+
+.experiencia {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  align-items: start;
+}
+
+.experiencia-imagem {
+  margin: 20px auto;
+}
+
+.experiencia-mob {
+  display: none;
+}
+
+.experiencia-conteudo {
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.links-experiencia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0px;
+}
+
+.botao-bikcraft {
+  background: var(--cor-p1);
+  padding: 8px 32px;
+  border-radius: 25px;
+}
+
+.link-exp {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1300px) {
+  .experiencia-imagem img {
+    display: none;
+  }
+  .experiencia-mob {
+    display: block;
+  }
+  .experiencia {
+    grid-template-columns: 1fr;
+  }
+  .experiencia-conteudo p {
+    text-align: center;
+  }
+  .experiencia-conteudo {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .experiencia-conteudo {
+    padding-top: 20px;
+  }
+}
