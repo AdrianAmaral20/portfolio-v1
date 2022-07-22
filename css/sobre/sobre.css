@@ -1,5 +1,13 @@
-#sobre .header-menu a[href*="sobre"] {
-  background: var(--cor-p1);
+@media (min-width: 400px) {
+  #sobre .header-menu a[href*="sobre"] {
+    background: var(--cor-p1);
+  }
+}
+
+@media (max-width: 400px) {
+  #sobre .header-menu a[href*="sobre"] {
+    color: var(--cor-0);
+  }
 }
 
 .sobre-mim-page {

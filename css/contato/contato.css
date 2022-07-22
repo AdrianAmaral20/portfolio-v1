@@ -1,5 +1,13 @@
-#contato .header-menu a[href*="contato"] {
-  background: var(--cor-p1);
+@media (min-width: 400px) {
+  #contato .header-menu a[href*="contato"] {
+    background: var(--cor-p1);
+  }
+}
+
+@media (max-width: 400px) {
+  #contato .header-menu a[href*="contato"] {
+    color: var(--cor-0);
+  }
 }
 
 .contato-page {
